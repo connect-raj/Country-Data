@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Country Data</title>
+    <!--Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="search-wrapper">
+        <input type="text" 
+              id="coun-name"
+              placeholder="Enter a Country">
+        <button class="search" onclick="fetchdata();">
+          search
+        </button>
+      </div>
+      <div class="hidden res"><h3>The Input Field Cannot be Empty!</h3></div>
+    <div class="hidden result">
+      <div class="flag">
+        <img src="" alt="" id="flg">
+        <h3 class="coun"></h3>
+      </div>
+      <div class="capital">
+        Capital:<div id="cap"></div>
+      </div>
+      <div class="continent">
+        Continent:<div id="con"></div>
+      </div>
+      <div class="area">
+        Area:<div id="ar"></div>
+      </div>
+      <div class="population">
+        Population:<div id="pop"></div>
+      </div>
+      <div class="timezone">
+        TimeZone:<div id="tz"></div>
+      </div>
+      <div class="currency">
+        Currency:<div id="curr"></div>
+      </div>
+      <div class="langauges">
+        Common Langauges:<div id="lang"></div>
+      </div>
+    </div>
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
